@@ -73,7 +73,7 @@ For this specific task, and based on the insights from `EXPLAIN ANALYZE` in Dune
 Please write a script that uses the endpoint `https://safe-transaction-mainnet.safe.global/api/v1/safes/0xBbA4C8eB57DF16c4CfAbe4e9A3Ab697A3e0C65D8/multisig-transactions/` to count the number of “WalletConnect transactions” made with this Safe (`0xBbA4C8eB57DF16c4CfAbe4e9A3Ab697A3e0C65D8`). “WalletConnect transactions” are those that contain the word “WalletConnect” in the “origin” field of the response.
 
 Solution:
-The solution to this problem can be found in the `script.py` file. Here's a snippet of the solution:
+The solution to this problem can be found in the `script.py` file. Using the script, we determined that the number of "WalletConnect transactions" for the specified Safe is 20. Here's a snippet of the solution:
 
 ```python
 import requests
@@ -154,6 +154,8 @@ if __name__ == "__main__":
 ```
 
 For the complete solution and to run the script, please refer to the `script.py` file. Additionally, a `requirements.txt` file has been included to ensure all dependencies are easily installable.
+
+---
 
 ## Potential questions during the interview
 
